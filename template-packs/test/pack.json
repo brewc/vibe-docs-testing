@@ -1,0 +1,21 @@
+{
+  "name": "test-docs-pack",
+  "framework": "generic",
+  "version": "1.0.0",
+  "templates": [
+    {
+      "name": "Test Policy Document",
+      "description": "A test policy document template",
+      "category": "policy",
+      "contentPath": "template.md.tmpl",
+      "schema": {
+        "requiredSections": ["Scope", "Owner"],
+        "requiredMetadata": ["review_date"],
+        "validationRules": {
+          "scope": { "required": true, "minLength": 10 },
+          "owner": { "required": true, "minLength": 3 }
+        }
+      }
+    }
+  ]
+}
